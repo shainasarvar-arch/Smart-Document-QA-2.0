@@ -318,6 +318,8 @@ def add_app_styles() -> None:
             [data-testid="stMainBlockContainer"] { padding:.8rem 1rem 1.5rem; }
             .st-key-app_panels [data-testid="stHorizontalBlock"] > div:first-child,
             .st-key-app_panels [data-testid="stHorizontalBlock"] > div:last-child { flex:1 1 100% !important; width:100% !important; min-width:0; }
+            .st-key-app_panels [data-testid="stHorizontalBlock"] > div:first-child { order:2; }
+            .st-key-app_panels [data-testid="stHorizontalBlock"] > div:last-child { order:1; }
             .hero { padding-top:.1rem; } .source-chip { white-space:normal; overflow-wrap:anywhere; }
         }
         @media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; } }
